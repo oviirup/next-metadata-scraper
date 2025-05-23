@@ -1,0 +1,21 @@
+# repository
+node_modules
+.vercel
+.turbo
+.next
+next-env.d.ts
+
+# temporary files
+*.temp.*
+*.bkp
+
+# debug
+*-debug.log*
+*-error.log*
+
+# local env files
+.env*
+!.env.example
+
+# generated files
+public/*.sprite.svg

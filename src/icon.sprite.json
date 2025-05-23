@@ -1,0 +1,65 @@
+{
+  "$schema": "https://unpkg.com/@oviirup/sprite/schema.json",
+  "name": "icon",
+  "output": "public/icon.sprite.svg",
+  "icons": {
+    "arrow-up": {
+      "content": "<path d='m5 12 7-7 7 7'/><path d='M12 19V5'/>",
+      "tags": ["forward", "direction", "north"]
+    },
+    "arrow-down": {
+      "content": "<path d='M12 5v14'/><path d='m19 12-7 7-7-7'/>",
+      "tags": ["backwards", "reverse", "direction", "south"]
+    },
+    "arrow-left": {
+      "content": "<path d='m12 19-7-7 7-7'/><path d='M19 12H5'/>",
+      "tags": ["previous", "back", "direction", "west"]
+    },
+    "arrow-right": {
+      "content": "<path d='M5 12h14'/><path d='m12 5 7 7-7 7'/>",
+      "tags": ["forward", "next", "direction", "east"]
+    },
+    "arrow-up-left": {
+      "content": "<path d='M7 17V7h10'/><path d='M17 17 7 7'/>",
+      "tags": ["direction", "north-west", "diagonal"]
+    },
+    "arrow-up-right": {
+      "content": "<path d='M7 7h10v10'/><path d='M7 17 17 7'/>",
+      "tags": ["direction", "north-east", "diagonal"]
+    },
+    "arrow-down-left": {
+      "content": "<path d='M17 7 7 17'/><path d='M17 17H7V7'/>",
+      "tags": ["direction", "south-west", "diagonal"]
+    },
+    "arrow-a-z": {
+      "content": "<path d='m3 16 4 4 4-4'/><path d='M7 20V4'/><path d='M20 8h-5'/><path d='M15 10V6.5a2.5 2.5 0 0 1 5 0V10'/><path d='M15 14h5l-5 6h5'/>"
+    },
+    "arrow-z-a": {
+      "content": "<path d='m3 8 4-4 4 4'/><path d='M7 4v16'/><path d='M20 8h-5'/><path d='M15 10V6.5a2.5 2.5 0 0 1 5 0V10'/><path d='M15 14h5l-5 6h5'/>"
+    },
+    "chevron-up": {
+      "content": "<path d='m18 15-6-6-6 6'/>"
+    },
+    "chevron-down": {
+      "content": "<path d='m6 9 6 6 6-6'/>"
+    },
+    "chevron-left": {
+      "content": "<path d='m15 18-6-6 6-6'/>"
+    },
+    "chevron-right": {
+      "content": "<path d='m9 18 6-6-6-6'/>"
+    },
+    "save": {
+      "content": "<path d='M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z'/><path d='M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7'/><path d='M7 3v4a1 1 0 0 0 1 1h7'/>"
+    },
+    "plus": {
+      "content": "<path d='M5 12h14'/><path d='M12 5v14'/>"
+    },
+    "minus": {
+      "content": "<path d='M5 12h14'/>"
+    },
+    "command": {
+      "content": "<path d='M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3'/>"
+    }
+  }
+}

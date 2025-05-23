@@ -1,0 +1,69 @@
+{
+  "name": "next-template",
+  "version": "1.0.6",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "clean": "npx rimraf .next .turbo out",
+    "dev": "next dev --turbo",
+    "format": "prettier . -wu --cache",
+    "format:check": "prettier . -cu",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "prepare": "husky",
+    "start": "next start",
+    "type:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@oviirup/envalid": "~0.1.3",
+    "@radix-ui/react-checkbox": "~1.3.2",
+    "@radix-ui/react-dialog": "~1.1.14",
+    "@radix-ui/react-popover": "~1.1.14",
+    "@radix-ui/react-slot": "~1.2.3",
+    "@radix-ui/react-tooltip": "~1.2.7",
+    "class-variance-authority": "~0.7.1",
+    "lucide-react": "~0.511.0",
+    "next": "~15.3.2",
+    "react": "~19.1.0",
+    "react-dom": "~19.1.0",
+    "tailwind-merge": "~3.3.0",
+    "zod": "~3.25.20"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "~3.3.1",
+    "@oviirup/sprite": "~0.1.13",
+    "@tailwindcss/postcss": "~4.1.7",
+    "@types/bun": "~1.2.14",
+    "@types/react": "~19.1.5",
+    "@types/react-dom": "~19.1.5",
+    "eslint": "~9.27.0",
+    "eslint-config-next": "~15.3.2",
+    "eslint-config-prettier": "~10.1.5",
+    "eslint-plugin-only-warn": "~1.1.0",
+    "husky": "~9.1.7",
+    "lint-staged": "~16.0.0",
+    "postcss": "~8.5.3",
+    "prettier": "~3.5.3",
+    "prettier-plugin-imports": "~4.3.3",
+    "prettier-plugin-jsdoc": "~1.3.2",
+    "prettier-plugin-pkg": "~0.19.1",
+    "prettier-plugin-tailwindcss": "~0.6.11",
+    "tailwindcss": "~4.1.7",
+    "tailwindcss-pluggables": "~1.1.2",
+    "typescript": "~5.8.3"
+  },
+  "lint-staged": {
+    "*.{js,mjs,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,json,md,mdx,yaml,gql,html}": [
+      "prettier --write"
+    ]
+  },
+  "sprite": [
+    "src/*.sprite.json"
+  ]
+}

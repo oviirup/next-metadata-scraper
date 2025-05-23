@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "explorer.sortOrder": "type",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "explicit"
+  },
+  "css.validate": false,
+  // tailwind support for cva and classNames
+  "tailwindCSS.classAttributes": ["className", "\\w+ClassName"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+  ],
+  // prettier-ignore
+  "cSpell.words": [
+    "envalid","hookform","inter","rehype","tailwindcss","webp","zod","shiki",
+    "fira","qrcode","pluggables","popover","stylesheet"
+  ]
+}
