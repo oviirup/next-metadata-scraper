@@ -56,7 +56,7 @@ function Scraper({
   }
 
   return (
-    <div className="mb-6 flex w-full max-w-md flex-col items-start gap-10">
+    <div className="mb-6 flex w-full max-w-md flex-col items-start gap-6">
       <form
         className="w-full max-w-md"
         noValidate

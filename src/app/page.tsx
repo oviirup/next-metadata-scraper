@@ -1,5 +1,6 @@
 import { Scraper } from '~/components/scraper'
 import { ThemeToggle } from '~/components/theme-toggle'
+import { Anchor } from '~/components/ui/anchor'
 import { getMetadata } from '~/lib/scraper/scraper'
 
 async function getMetadataAction(url: string) {
@@ -10,6 +11,7 @@ async function getMetadataAction(url: string) {
 async function HomePage() {
   const initialUrl = 'https://leerob.io'
   const initialMetadata = await getMetadataAction(initialUrl)
+
   return (
     <div className="container mx-auto flex min-h-svh flex-col">
       <div
@@ -39,8 +41,8 @@ async function HomePage() {
           <ThemeToggle />
         </div>
       </div>
-      <main className="flex grow flex-col items-center justify-center">
-        <hgroup className="mb-10 text-center text-2xl md:text-3xl">
+      <main className="my-6 flex grow flex-col items-center justify-center gap-10">
+        <hgroup className="text-center text-2xl md:text-3xl">
           <h1 className="font-bold">Metadata Toolkit</h1>
           <p className="max-w-sm text-[0.625em] text-balance text-muted-fg">
             Parse, preview, & generate metadata on serverless
@@ -48,6 +50,23 @@ async function HomePage() {
         </hgroup>
         <Scraper {...{ initialUrl, initialMetadata, getMetadataAction }} />
       </main>
+      <div className="flex items-center justify-between py-4 text-center text-sm text-muted-fg">
+        <Anchor
+          href="//github.com/oviirup/next-metadata-scraper"
+          external
+          className="underline underline-offset-4 transition-all hocus:text-primary">
+          Source Code
+        </Anchor>
+        <span>
+          A project by{' '}
+          <Anchor
+            href="//x.com/oviirup"
+            external
+            className="underline underline-offset-4 transition-all hocus:text-primary">
+            Avirup
+          </Anchor>
+        </span>
+      </div>
     </div>
   )
 }

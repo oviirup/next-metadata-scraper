@@ -63,9 +63,6 @@
     outline-offset: 4px;
     border-style: solid;
     border-color: var(--border);
-    scroll-margin-top: calc(var(--header-height) + 2rem);
-    scrollbar-width: thin;
-    scrollbar-color: var(--color-ring) transparent;
   }
 
   *::selection {
